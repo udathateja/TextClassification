@@ -1,8 +1,8 @@
 import sklearn.datasets as skd
 
 categories = ['alt.atheism', 'soc.religion.christian','comp.graphics', 'sci.med']
-news_train = skd.load_files('/home/ayush/Desktop/Fetch20newsgroup/train', categories= categories, encoding= 'ISO-8859-1')
-news_test = skd.load_files('/home/ayush/Desktop/Fetch20newsgroup/test/',categories= categories, encoding= 'ISO-8859-1')
+news_train = skd.load_files('/home/teja/Desktop/Fetch20newsgroup/train', categories= categories, encoding= 'ISO-8859-1')
+news_test = skd.load_files('/home/teja/Desktop/Fetch20newsgroup/test/',categories= categories, encoding= 'ISO-8859-1')
 
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
